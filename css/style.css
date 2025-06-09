@@ -1,0 +1,194 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    /* box-sizing: border-box; */
+   
+}
+/* variáveis para guardar valores do css */
+:root {
+     --cor-01: #000;
+     --cor-02: #851212;
+     --cor-03: #ccc;
+     --cor-04: #ffbb00;
+}
+
+body {
+    padding-top: 100px;
+}
+
+
+.container {
+    /* centralizar o site */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#cabecalho {
+    background-color: #000;
+    margin-bottom: 30px;
+    /* fixar o cabecalho na tela, quando rolar para baixo */
+    position: fixed;
+    top: 0px;
+    /* para ficar sobre o cabeçalho */
+    z-index: 1;
+    width: 100%;
+}
+#cabecalho #logo {
+    width: 150px;
+
+}
+#cabecalho .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#menu ul {
+    display: flex;
+}
+#menu ul li {
+    display: flex;
+    list-style: none;
+}
+
+#menu .submenu {
+    display: none;
+    /* para flutuar */
+    position: absolute;
+    z-index: 1;
+    background-color: var(--cor-01);
+}
+
+#menu ul li a {
+    color: var(--cor-04) ;
+    text-decoration: none;
+    display: block;
+    padding: 20px 30px;
+    /* suavizar a mudança de cor */
+    transition: all .3s linear;
+}
+
+#menu ul li a:hover {
+    /* hover é pra mudar a cor, quando voce passa o mouse encima */
+    background-color: var(--cor-02);
+}
+
+#menu ul li:hover  .submenu {
+    /* submenu, para as opções aparecerem */
+    display: block;
+}
+
+.conteudo .titulo {
+    text-align: center;
+    margin: 100px;
+    font-size: 50px;
+}
+
+#historia img {
+    width: 400px;
+    /* flutuar a imagem no texto, ao lado direito ou esquerdo */
+    float: left;
+    border-radius: 40px ;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#historia p {
+    /* justificar o alinhamento */
+    text-align: justify;
+    margin-bottom: 30px;
+    font-size: 100px;
+}
+
+#fotos #galeria {
+    display: grid;
+    /* para ter colunas */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* espaçamento entre as fotos */
+    gap: 30px;
+}
+#historia {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 200px;
+    padding: 250px;
+}
+
+#historia div {
+    background-color: #ffbb00;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+}
+
+#historia img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+#historia p {
+    margin-top: 50px;
+    font-size: 20px;
+    color: #333;
+}
+
+#historia :hover {
+    transform: scale(1.1);
+    text-decoration: none;
+    display: block;
+    padding: 20px 30px;
+    /* suavizar a mudança de cor */
+    transition: all .5s linear;
+}
+
+#rodape {
+    background-color: #000;
+    color: #ffbb00;
+    padding: 30px;
+    text-align: center;
+    margin-top: 0px;    
+}
+
+#rodape a {
+    color: #ffbb00;
+    /* anular a linha do link */
+    text-decoration: none;
+}
+
+#rodape a:hover {
+    /* quando passar o mouse encima, ele ficar azul */
+    text-decoration: underline;
+    color: var(--cor-02);
+}
+
+.image1 {
+    background-image: url(../images/fotos/plano.de.fundo/vista-frontal-de-copos-de-cerveja-com-trigo_23-2148755010.avif);
+    background-size: 50%;
+    
+}
+.image2 {
+    background-image: url(../images/fotos/plano.de.fundo/gelo.jpg);
+    background-size: 50%;
+}
+.image3 {
+    background-image: url(../images/fotos/plano.de.fundo/gin.jpg);
+    background-size: 50%;   
+}
+.image4 {
+    background-image: url(../images/fotos/plano.de.fundo/vinho.jpg);
+    background-size: 50%;    
+}
+.image5 {
+    background-image: url(../images/fotos/plano.de.fundo/vodka.webp);
+    background-size: 50%;    
+}
+.image6 {
+    background-image: url(../images/fotos/plano.de.fundo/whisky.jpg);
+    background-size: 50%;   
+}
+.image7 {
+    background-color: #851212;
+}

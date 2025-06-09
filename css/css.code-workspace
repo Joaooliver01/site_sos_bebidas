@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "D:/SOS.BEBIDASJ/css"
+		},
+		{
+			"path": "D:/SOS.BEBIDASJ/images"
+		},
+		{
+			"path": "D:/SOS.BEBIDASJ/pages"
+		},
+		{
+			"path": "D:/SOS.BEBIDASJ/plugins"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "css"
+	}
+}
